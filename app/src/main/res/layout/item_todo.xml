@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wipeLayout"
+    app:dragEdge="left"
+    app:mode="same_level"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="4dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="5dp"
+
+  >
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:id="@+id/Delete_Icon"
+           android:layout_width="98dp"
+           android:layout_height="100dp"
+           android:orientation="horizontal"
+           android:background="@color/delete_back"
+           >
+           <ImageView
+               android:id="@+id/delete_icon"
+               android:layout_width="70dp"
+               android:layout_height="50dp"
+               android:src="@drawable/deletee"
+               android:layout_gravity="center"/>
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/Edit_Icon"
+           android:layout_width="98dp"
+           android:layout_height="100dp"
+           android:orientation="vertical"
+           android:background="@color/blue"
+           >
+           <ImageView
+               android:id="@+id/edit_icon"
+               android:layout_width="60dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="30dp"
+               android:layout_gravity="center"
+               android:src="@drawable/editt"
+              />
+       </LinearLayout>
+   </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="355dp"
+        android:layout_height="100dp"
+        app:contentPadding="8dp"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="8dp"
+        android:theme="@style/background_cardview"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/line"
+                android:layout_width="4dp"
+                android:layout_height="80dp"
+                android:layout_marginVertical="12dp"
+                style="@style/view_line"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintBottom_toTopOf="@+id/description"
+                app:layout_constraintEnd_toStartOf="@id/mark_as_done"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/line"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Android assignment" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/mark_as_done"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/line"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                tools:text="Android assalksjnlkasjndflkajnsdlfkjansldkfjnalksjdfnlkajsndlfkjnlakjsndlfkjasdfignment" />
+
+            <ImageView
+                android:id="@+id/mark_as_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:src="@drawable/mark_done"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/mark_as_donee_text"
+                android:layout_width="68dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_height="31dp"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="@id/mark_as_done"
+                app:layout_constraintTop_toTopOf="@id/mark_as_done"
+               app:layout_constraintEnd_toStartOf="@id/mark_as_done"
+                app:layout_constraintEnd_toEndOf="@id/mark_as_done"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+
+
+
+
+

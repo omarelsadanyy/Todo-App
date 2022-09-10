@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Todo_App</string>
+    <string name="todo">todo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todoo">TODO</string>
+    <string-array name="list_language">
+        <item>Arabic</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="list_mode">
+        <item>Light mode</item>
+        <item>Dark mode</item>
+    </string-array>
+</resources>

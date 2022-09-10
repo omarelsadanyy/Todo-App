@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#5D9CEC</color>
+    <color name="blue_dark">#255695</color>
+    <color name="green">#61E757</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundtodo">#DFECDB</color>
+    <color name="transparent">#00000000</color>
+    <color name="delete_back">#F01E1E</color>
+    <color name="background_app_dark">#060E1E</color>
+    <color name="backgroundtodo_dark">#141922</color>
+
+</resources>

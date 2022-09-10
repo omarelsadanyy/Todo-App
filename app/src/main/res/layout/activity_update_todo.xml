@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update.UpdateTodo"
+    style="@style/background_todo">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:background="@color/blue"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="30dp"
+        android:text="To Do List"
+        android:textColor="?android:textColorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="352dp"
+        android:layout_height="617dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:elevation="10dp"
+        android:theme="@style/background_cardview"
+        app:cardCornerRadius="24dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+   <TextView
+       android:id="@+id/title_update"
+       android:layout_width="82sp"
+       android:layout_height="25sp"
+       android:textColor="?android:textColorPrimary"
+       android:textStyle="bold"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:text="Edit Task"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/title_layout_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_update"
+        style="@style/MyTextInputLayout"
+        >
+        <EditText
+            android:id="@+id/todo_title_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="New title"
+            android:textColorHint="?android:textColorPrimary"
+            android:lines="4"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/details_layout_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@id/title_layout_update"
+        >
+        <EditText
+            android:id="@+id/todo_details_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New details"
+            android:textStyle="bold"
+            android:textColor="?android:textColorPrimary"
+            android:lines="4"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/choose_date_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/details_layout_update"
+        android:text="Select Date"
+        />
+    <Button
+        android:id="@+id/add_button_update"
+        android:layout_width="255dp"
+        android:layout_height="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_primary"
+        android:text="Save changes"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/choose_date_update"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

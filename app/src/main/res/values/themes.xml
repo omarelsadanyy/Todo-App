@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Todo_App" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <item name="colorSecondaryVariant">@color/green</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColor">@color/blue</item>
+
+    </style>
+    <style name="bottom_navigationview">
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="calender">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="background_todo">
+        <item name="android:background">@color/backgroundtodo</item>
+    </style>
+    <style name="Theme.Todo_App.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="background_cardview">
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+    <style name="view_line">
+        <item name="android:background">@drawable/rounded_primary</item>
+        <item name="android:backgroundTint">@color/blue</item>
+    </style>
+    <style name="view_line_isdone">
+        <item name="android:background">@drawable/rounded_primary_green</item>
+        <item name="android:backgroundTint">@color/green</item>
+    </style>
+    <style name="background_cardview_text">
+        <item name="android:background">@color/blue</item>
+    </style>
+    <style name="spinner_background">
+        <item name="android:background">@drawable/spinner_shape</item>
+    </style>
+    <style name="add_sheet">
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- border color -->
+        <item name="boxStrokeColor">@color/black</item>
+
+        <!-- The color of the label when it is collapsed and the text field is active -->
+        <item name="hintTextColor">@color/black</item>
+        <!-- The color of the label in all other text field states (such as resting and disabled) -->
+<!--        <item name="android:textColorHint">@color/black</item>-->
+        <item name="boxBackgroundColor">@color/white</item>
+    </style>
+</resources>
