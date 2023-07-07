@@ -83,7 +83,7 @@ lateinit var todo:Todo
         return isvalid
     }
        fun recive_data(){
-          todo =intent.getSerializableExtra(constants.Extra_todo) as Todo
+           todo =intent.getSerializableExtra(constants.Extra_todo) as Todo
             title_layout.editText?.setText(todo.name)
              details_layout.editText?.setText(todo.details)
        }

@@ -50,6 +50,7 @@
             android:textColor="?android:textColorPrimary"
             android:lines="4"
             />
+
     </com.google.android.material.textfield.TextInputLayout>
     <TextView
         android:id="@+id/choose_date"

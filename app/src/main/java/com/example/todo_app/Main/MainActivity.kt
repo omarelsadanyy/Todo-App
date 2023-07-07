@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import com.example.todo_app.Fragments.AddBottomFragment
 import com.example.todo_app.R
 import com.example.todo_app.Fragments.TodoListFragment
-import com.example.todo_app.Fragments.settingsFragment
+import com.example.todo_app.Fragments.SettingsFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationBarView
@@ -14,7 +14,7 @@ import com.google.android.material.navigation.NavigationBarView
 class MainActivity : AppCompatActivity() {
 lateinit var addbutton:FloatingActionButton
 lateinit var bottom_navigation:BottomNavigationView
-var settingsfragment= settingsFragment()
+var settingsfragment= SettingsFragment()
 var listfragmnet= TodoListFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +31,7 @@ addbutton=findViewById(R.id.add_fragment)
          return@OnItemSelectedListener true
         })
        bottom_navigation.selectedItemId= R.id.list_Icon
+
         addbutton.setOnClickListener {
         showAddbottom()
         }
